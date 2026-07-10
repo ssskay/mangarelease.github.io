@@ -10,6 +10,9 @@ from utils import FORMATS, Info, Series, find_series
 NAME = 'Kodansha'
 
 FORMAT = re.compile(rf'(?P<title>.+) \((?P<format>{"|".join(FORMATS)})\)')
+# discover API without subCategory returns manga; 7 = light novels, 8 = chapters
+NOVEL = re.compile(r'\((?:light )?novel\)', flags=re.IGNORECASE)
+SKIP = re.compile(r'box set|chapter \d', flags=re.IGNORECASE)
 
 
 def parse(session: Session, series: Series, link: str, format: str = '') -> set[Info]:
@@ -60,10 +63,11 @@ def parse(session: Session, series: Series, link: str, format: str = '') -> set[
 def scrape_full(series: set[Series], info: set[Info]) -> tuple[set[Series], set[Info]]:
     with Session() as session:
         params = {'sort': '5',
-                  'subCategory': '7',
                   'seriesStatus': '0',
                   'fromIndex': '0',
                   'count': '1000'}
+        kept = 0
+        skipped = 0
         for i in range(2):
             params['seriesStatus'] = str(i)
             page = session.get('https://api.kodansha.us/discover/v2', params=params)
@@ -74,19 +78,25 @@ def scrape_full(series: set[Series], info: set[Info]) -> tuple[set[Series], set[
                     continue
 
                 title = content['seriesName']
+                if (NOVEL.search(title) or SKIP.search(title)
+                        or SKIP.search(content.get('title', ''))):
+                    skipped += 1
+                    continue
                 format = ''
                 if match := FORMAT.fullmatch(title):
                     title = match.group('title')
                     format = match.group('format')
-                serie = find_series(title, series)
+                serie = find_series(title, series) or Series(None, title)
+                series.add(serie)
+                kept += 1
 
-                if serie:
-                    link = f'https://api.kodansha.us/product/{content["id"]}'
-                    try:
-                        inf = parse(session, serie, link, format)
-                        info -= inf
-                        info |= inf
-                    except Exception as e:
-                        warnings.warn(f'({link}): {e}', RuntimeWarning)
+                link = f'https://api.kodansha.us/product/{content["id"]}'
+                try:
+                    inf = parse(session, serie, link, format)
+                    info -= inf
+                    info |= inf
+                except Exception as e:
+                    warnings.warn(f'({link}): {e}', RuntimeWarning)
+        print(f'{NAME}: {kept} products kept, {skipped} filtered', flush=True)
 
     return series, info

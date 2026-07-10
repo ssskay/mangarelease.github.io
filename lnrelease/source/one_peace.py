@@ -81,7 +81,7 @@ def scrape_full(series: set[Series], info: set[Info]) -> tuple[set[Series], set[
     with Session() as session:
         page = session.get('https://www.onepeacebooks.com/books_jt.html')
         soup = BeautifulSoup(page.content, 'lxml')
-        volumes = soup.select('dt:has(.bookpage-cate:-soup-contains("LIGHT NOVELS")) + dd a')
+        volumes = soup.select('dt:has(.bookpage-cate:-soup-contains("MANGA")) + dd a')
         for a in volumes:
             try:
                 link = urljoin('https://www.onepeacebooks.com/', a.get('href'))

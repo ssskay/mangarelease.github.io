@@ -42,13 +42,25 @@ def parse(session: Session, link: str) -> tuple[Series, set[Info]] | None:
     return series, info
 
 
+def keep(loc: str) -> bool:
+    # everything except prose novels and digital chapters; graphic novels stay
+    slug = loc.replace('-graphic-novel', '')
+    return not ('-light-novel' in slug or '-novel' in slug or '-chapter-' in slug)
+
+
 def scrape_full(series: set[Series], info: set[Info], limit: int = 1000) -> tuple[set[Series], set[Info]]:
     with Session() as session:
+        kept = 0
+        skipped = 0
         sitemap = session.get('https://tokyopop.com/sitemap.xml', cf=True, ia=True)
         for loc in BeautifulSoup(sitemap.content, 'lxml-xml').select('sitemap > loc:-soup-contains("sitemap_products")'):
             page = session.get(loc.text, cf=True, ia=True)
             soup = BeautifulSoup(page.content, 'lxml-xml')
-            for loc in soup.select('urlset > url > loc:-soup-contains("-light-novel")'):
+            for loc in soup.select('urlset > url > loc'):
+                if not keep(loc.text):
+                    skipped += 1
+                    continue
+                kept += 1
                 try:
                     isbn = ISBN.fullmatch(loc.text).group('isbn')
                     if res := parse(session, isbn):
@@ -56,7 +68,8 @@ def scrape_full(series: set[Series], info: set[Info], limit: int = 1000) -> tupl
                         info -= res[1]
                         info |= res[1]
                 except Exception as e:
-                    warnings.warn(f'{isbn}: {e}', RuntimeWarning)
+                    warnings.warn(f'{loc.text}: {e}', RuntimeWarning)
+        print(f'{NAME}: {kept} products kept, {skipped} filtered', flush=True)
 
     return series, info
 

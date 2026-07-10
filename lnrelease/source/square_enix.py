@@ -45,15 +45,19 @@ def parse(session: Session, series: Series, link: str, index: int) -> set[Info]:
     return info
 
 
-def scrape_full(series: set[Series], info: set[Info]) -> tuple[set[Series], set[Info]]:
+def scrape_full(series: set[Series], info: set[Info], limit: int = 0) -> tuple[set[Series], set[Info]]:
     with Session() as session:
         page = session.get(f'{HOST}/en-us/series')
         soup = BeautifulSoup(page.content, 'lxml')
         lst = soup.find_all('a', href=SERIES)
+        kept = 0
         for x in lst:
             title = x.find(class_='p-1').text
-            if '(Light Novel)' not in title:
+            if '(Light Novel)' in title or '(Novel)' in title:
                 continue
+            if limit and kept >= limit:
+                break
+            kept += 1
             try:
                 link = f'{HOST}{x["href"]}'
                 page = session.get(link)
@@ -68,5 +72,6 @@ def scrape_full(series: set[Series], info: set[Info]) -> tuple[set[Series], set[
                         index += 1
             except Exception as e:
                 warnings.warn(f'({link}): {e}', RuntimeWarning)
+        print(f'{NAME}: {kept} of {len(lst)} series kept', flush=True)
 
     return series, info

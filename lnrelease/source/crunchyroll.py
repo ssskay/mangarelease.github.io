@@ -10,19 +10,19 @@ NAME = 'Crunchyroll'
 
 
 ISBN = re.compile(r'\d{13}')
-NOVEL = re.compile(r'(?<!\bThe) Novel\b')
+MANGA = re.compile(r'(?<!\bThe) Manga\b')
 FORMAT = re.compile(rf'(?P<title>.+) \((?P<format>{"|".join(FORMATS)})\)')
-OMNIBUS = re.compile(r'(?:contains|collects)(?: novel)? volumes (?P<volume>\d+(?:\.\d)?-\d+(?:\.\d)?)')
+OMNIBUS = re.compile(r'(?:contains|collects)(?: manga)? volumes (?P<volume>\d+(?:\.\d)?-\d+(?:\.\d)?)')
 START = re.compile(r'(?P<start>.+?)(?: Omnibus\b| Collector\'s Edition\b| Volume\b)+(?: \d+)?')
 
 PUBLISHERS = {
     'AIRSHIP': 'Seven Seas Entertainment',
-    'CROSS INFINITE WORLD': 'Cross Infinite World',
+    'CROSS INFINITE WORLD': '',
     'DARK HORSE': 'Dark Horse',
     'DARK HORSE MANGA': 'Dark Horse',
     'DIGITAL MANGA PUBLISHING': 'Digital Manga Publishing',
     'GHOST SHIP': 'Seven Seas Entertainment',
-    'IZE PRESS': '',
+    'IZE PRESS': 'Ize Press',
     'JNC': 'J-Novel Club',
     'LOVELOVE': 'TOKYOPOP',
     'ONE PEACE': 'One Peace Books',
@@ -30,7 +30,7 @@ PUBLISHERS = {
     'SQUARE ENIX BOOKS': 'Square Enix',
     'SQUARE ENIX MANGA': 'Square Enix',
     'STEAMSHIP': 'Seven Seas Entertainment',
-    'TENTAI BOOKS': 'Tentai Books',
+    'TENTAI BOOKS': '',
     'TOKYOPOP': 'TOKYOPOP',
     'VERTICAL': 'Kodansha',
     'VIZ BOOKS': 'VIZ Media',
@@ -64,7 +64,7 @@ def parse(session: Session, jsn: dict) -> tuple[Series, Info] | None:
     path = f'{product["c_urlName"]}-{isbn}.html'
     link = urljoin('https://store.crunchyroll.com/products/', path)
 
-    title = NOVEL.sub('', jsn['productName'])
+    title = MANGA.sub('', jsn['productName'])
     format = 'Paperback'
     if match := FORMAT.fullmatch(title):  # extract format if present
         title = match.group('title')
@@ -94,7 +94,7 @@ def scrape_full(series: set[Series], info: set[Info]) -> tuple[set[Series], set[
         params = {
             'siteId': 'CrunchyrollUS',
             'q': '',
-            'refine': 'cgid=light-novels',
+            'refine': 'cgid=manga',
             'sort': 'New-to-Old',
             'currency': 'USD',
             'locale': 'en-US',

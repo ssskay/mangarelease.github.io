@@ -11,8 +11,8 @@ from typing import Self
 
 import store
 
-TITLE = re.compile(r' [\(\[](?:(?:bl )?(?:light )?novels?|audio(?:book)?|(?:\w+ )?e?book|spin[- ]?off)[\)\]]|: light novel$', flags=re.IGNORECASE)
-SERIES = re.compile(r'(?:\b|\s|,|:|-)+(?:[\(\[](?:(?:bl )?(?:light )?novels?|audio(?:book)?|e?book|spin[- ]?off)[\)\[]|(?:(vol\.|volume|part) \d[\d\-\.]*)|omnibus(?: \d*)?|(?:special|collector\'s) edition)(?:(?=\W)|$)', flags=re.IGNORECASE)
+TITLE = re.compile(r' [\(\[](?:manga|manhwa|manhua|webtoons?|comics?|graphic novel|audio(?:book)?|(?:\w+ )?e?book|spin[- ]?off)[\)\]]|: the manga$', flags=re.IGNORECASE)
+SERIES = re.compile(r'(?:\b|\s|,|:|-)+(?:[\(\[](?:manga|manhwa|manhua|webtoons?|comics?|graphic novel|audio(?:book)?|e?book|spin[- ]?off)[\)\[]|(?:(vol\.|volume|part) \d[\d\-\.]*)|omnibus(?: \d*)?|(?:special|collector\'s) edition)(?:(?=\W)|$)', flags=re.IGNORECASE)
 NONWORD = re.compile(r'\W')
 IA = re.compile(r'https?://web\.archive\.org/web/\d{14}/(?P<url>.+)')
 
@@ -22,8 +22,7 @@ AUDIOBOOK = ('Audiobook', 'Audio')
 FORMATS = {x: i for i, x in enumerate(PHYSICAL + DIGITAL + AUDIOBOOK)}
 
 PRIMARY = (
-    'Cross Infinite World',
-    'Hanashi Media',
+    'Ize Press',
     'J-Novel Club',
     'Kodansha',
     'One Peace Books',

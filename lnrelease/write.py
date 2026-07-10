@@ -73,7 +73,7 @@ def main() -> None:
     releases = get_releases()
     current = get_current(releases)
     write_page((b for b in current if b.format != Format.AUDIOBOOK),
-               OUT, f'# Licensed Light Novel Releases', True)
+               OUT, f'# Licensed Manga Releases', True)
 
 
 if __name__ == '__main__':

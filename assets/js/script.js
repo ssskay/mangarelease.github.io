@@ -1436,6 +1436,6 @@ async function init() {
 
 init().catch(error => {
     console.log(error);
-    const s = `Error loading light novels: ${error}`;
+    const s = `Error loading manga: ${error}`;
     ROWS.prepend(getGroup(s, 'error'));
 });

@@ -15,24 +15,27 @@ PAGES = Path('bookwalker.csv')
 HYDRATE = re.compile(r'(?:^|;)\$R(?P<t>[SC])\(\"(?P<a>[SB]:\w+)\",\"(?P<b>[PS]:\w+)\"\)$')
 PATH = re.compile(r'/(?:volume|chapter|series)/(?P<id>[A-Z\d]{12})/[\w-]+')
 PUBLISHERS = {
-    'Cross Infinite World': 'Cross Infinite World',
+    'Cross Infinite World': '',
     'Crossed Hearts': '',
     'Dark Horse Comics': 'Dark Horse',
-    'Graphic Audio': 'Dark Horse',
+    'Graphic Audio': '',
     'Denshobato': '',
-    'Dreamscape Lore': 'J-Novel Club',
+    'Dreamscape Lore': '',
     'J-Novel Club': 'J-Novel Club',
-    'JNC Audio': 'J-Novel Club',
-    'Tantor Media': 'J-Novel Club',
+    'JNC Audio': '',
+    'Tantor Media': '',
     'Kodansha': 'Kodansha',
     'One Peace Books': 'One Peace Books',
-    'One Peace Books (Audiobooks)': 'One Peace Books',
-    'SB Creative': 'SB Creative',
+    'One Peace Books (Audiobooks)': '',
+    'SB Creative': '',
     'Seven Seas Entertainment': 'Seven Seas Entertainment',
-    'Seven Seas Siren': 'Seven Seas Entertainment',
-    'Tokyopop': '',
+    'Seven Seas Siren': '',
+    'Square Enix': 'Square Enix',
+    'Square Enix Manga': 'Square Enix',
+    'Tokyopop': 'TOKYOPOP',
+    'Vertical Comics': 'Kodansha',
     'VIZ Media': 'VIZ Media',
-    'Ize Press': '',
+    'Ize Press': 'Ize Press',
     'JY': 'Yen Press',
     'Yen Press': 'Yen Press',
 }
@@ -71,11 +74,9 @@ def get_id(link: str) -> str:
 
 def get_format(format: str, key: str) -> str | None:
     match format:
-        case 'NOVEL':
-            return 'Digital'
-        case 'AUDIOBOOK':
-            return 'Audiobook'
         case 'MANGA' | 'WEBTOON':
+            return 'Digital'
+        case 'NOVEL' | 'AUDIOBOOK':
             return None
         case _:
             warnings.warn(f'Unknown format ({key}): {format}', RuntimeWarning)
@@ -222,7 +223,8 @@ def scrape_full(series: set[Series], info: set[Info], limit: int = 1000) -> tupl
                     warnings.warn(f'({link}): {e}', RuntimeWarning)
 
         uids |= new
-        link = 'https://bookwalker.com/calendar?' + urlencode({'formats[]': [2, 4], 'type': 'volume'}, doseq=True)
+        # calendar format 1 = manga, 2 = novel, 3 = webtoon, 4 = audiobook
+        link = 'https://bookwalker.com/calendar?' + urlencode({'formats[]': [1, 3], 'type': 'volume'}, doseq=True)
         s = parse_month(session, link, uids, new, series, pages, keys, 'now')
         for tab in s.select('div[class$="__tabBar"] > a[class$="__tab"]'):
             link = urljoin('https://bookwalker.com', tab['href'])

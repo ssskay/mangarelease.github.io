@@ -11,9 +11,12 @@ from utils import PHYSICAL, Info, Series
 NAME = 'Seven Seas Entertainment'
 
 PAGES = re.compile(r'Page (?P<cur>\d+) of (?P<last>\d+)')
-OMNIBUS = re.compile(rf'(?P<name>.+?)(?: \w+ Edition \d+)? \(Light Novel\)\s*\(Vol\. (?P<volume>\d+(?:\.\d)?-\d+(?:\.\d)?) ?(?P<format>{"|".join(PHYSICAL)})? Omnibus\)')
-NON_FORMATS = ('Manga', 'Novel')
-FORMATS = ('Light Novel', 'Reference Guide')
+OMNIBUS = re.compile(rf'(?P<name>.+?)(?: \w+ Edition \d+)?(?: \(Manga\))?\s*\(Vol\. (?P<volume>\d+(?:\.\d)?-\d+(?:\.\d)?) ?(?P<format>{"|".join(PHYSICAL)})? Omnibus\)')
+NON_FORMATS = ('Light Novel', 'Novel', 'Reference Guide')
+FORMATS = ('Manga', 'Comics')
+NOVEL_MARKERS = (' (Light Novel)', ' (Novel)')
+# wordpress tags marking prose releases, excluded from the manga scrape
+NOVEL_TAGS = {43, 82}  # light-novels, novel
 DATES = (r'%b %d, %Y', r'%Y-%m-%d', r'%B %d, %Y', r'%Y/%m/%d')
 ISBN = re.compile(r'97[89][-\d]{10,}')
 
@@ -37,7 +40,9 @@ def parse(session: Session, link: str, series: Series, refresh: int) -> set[Info
         index += 1
         header = release.find_previous('h3', class_='header').text
         title = release.h3.text
-        if ' (Light Novel)' in title:
+        if any(marker in title for marker in NOVEL_MARKERS):
+            continue
+        elif ' (Manga)' in title:
             pass
         elif format := release.find('b', string='Format:'):
             format = format.next_sibling.strip()
@@ -89,11 +94,11 @@ def scrape_full(series: set[Series], info: set[Info]) -> tuple[set[Series], set[
         }
         url = 'https://sevenseasentertainment.com/wp-json/wp/v2/series'
         params = {
-            'tags[0]': 43,
             'orderby': 'modified',
             'per_page': 100,
             'page': 1,
         }
+        skipped = 0
         try:
             while True:
                 jsn = []
@@ -105,8 +110,14 @@ def scrape_full(series: set[Series], info: set[Info]) -> tuple[set[Series], set[
                     except JSONDecodeError:
                         pass
                 for serie in jsn:
+                    if NOVEL_TAGS & set(serie.get('tags', ())):
+                        skipped += 1
+                        continue
                     link = serie['link']
                     title = unescape(serie['title']['rendered'])
+                    if any(marker in title for marker in NOVEL_MARKERS):
+                        skipped += 1
+                        continue
                     modified = datetime.date.fromisoformat(serie['modified_gmt'][:10])
                     links.setdefault(link, (title, modified))
                 if len(jsn) != params['per_page']:
@@ -121,10 +132,15 @@ def scrape_full(series: set[Series], info: set[Info]) -> tuple[set[Series], set[
                     break
             for a in lst:
                 link = a.get('href')
-                if link.endswith('-light-novel/'):
+                if link.endswith('-light-novel/') or link.endswith('-novel/'):
+                    skipped += 1
+                elif any(marker in a.text for marker in NOVEL_MARKERS):
+                    skipped += 1
+                else:
                     links.setdefault(link, (a.text, None))
         except Exception as e:
             warnings.warn(f'Error finding links: {e}')
+        print(f'{NAME}: {len(links)} series kept, {skipped} novel series filtered', flush=True)
 
         today = datetime.date.today()
         for link, (title, modified) in links.items():

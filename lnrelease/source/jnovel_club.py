@@ -60,7 +60,7 @@ def scrape_full(series: set[Series], info: set[Info]) -> tuple[set[Series], set[
             page = session.get('https://labs.j-novel.club/app/v2/series', params=params)
             jsn = page.json()
             for serie in jsn['series']:
-                if serie['type'] != 'NOVEL' or any(tag in serie['tags'] for tag in EXCLUDE):
+                if serie['type'] != 'MANGA' or any(tag in serie['tags'] for tag in EXCLUDE):
                     s = Series(None, serie['title'])
                     info -= {i for i in info if i.serieskey == s.key}
                     continue
@@ -91,7 +91,7 @@ def scrape(series: set[Series], info: set[Info]) -> tuple[set[Series], set[Info]
         jsn = page.json()
         for event in jsn['events']:
             serie = event['serie']
-            if (serie['type'] == 'NOVEL'
+            if (serie['type'] == 'MANGA'
                     and 'j-novel pulp' not in serie['tags']
                     and 'pulp' not in serie['tags']):
                 s = Series(None, serie['title'])

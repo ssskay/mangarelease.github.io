@@ -12,10 +12,13 @@ NAME = 'Yen Press'
 
 PAGES = Path('yen_press.csv')
 
-TITLES = re.compile(r'https://yenpress\.com/titles/\d{13}-(?!.*(manga-vol|vol-\d+-manga|vol-\d+-comic|-chapter-\d+))[\w-]+')
+TITLES = re.compile(r'https://yenpress\.com/titles/\d{13}-(?!.*(light-novel|novel-vol|vol-\d+-novel|-audiobook|-chapter-\d+))[\w-]+')
 LINK = re.compile(r'(https://yenpress.com)?/titles/(?P<isbn>\d{13})-(?P<name>[\w-]+)')
 OMNIBUS = re.compile(r'contains(?: the complete)? volumes (?P<volume>\d+(?:\.\d)?-\d+(?:\.\d)?)', flags=re.IGNORECASE)
-START = re.compile(r'(?P<start>.+?) (?:omnibus |collector\'s edition |volume )+\d+(?: \(light novel\))?', flags=re.IGNORECASE)
+START = re.compile(r'(?P<start>.+?) (?:omnibus |collector\'s edition |volume )+\d+(?: \((?:manga|comic)\))?', flags=re.IGNORECASE)
+# manga lives under /category/manga; Ize Press manhwa under /category/comics
+CATEGORIES = ('/category/manga', '/category/comics')
+IMPRINTS = ('Ize Press', 'J-Novel Club')
 
 
 def parse(session: Session, link: str, links: dict[str, str]) -> None | tuple[Series, set[Info]]:
@@ -29,14 +32,12 @@ def parse(session: Session, link: str, links: dict[str, str]) -> None | tuple[Se
     if not formats or not details:
         return None
     series_title = details[0].select_one('span:-soup-contains("Series") + p').text
-    if series_title.endswith('(light novel serial)'):
+    if series_title.endswith('serial)'):
         return None
 
     category = soup.select_one('div.breadcrumbs.desktop-only > a:last-child').get('href')
     imprint = details[0].select_one('span:-soup-contains("Imprint") + p').text
-    # category of ebooks is inconsistent
-    if (category != '/category/light-novels' and category != '/category/audio-books'
-            and imprint != 'Yen On' and imprint != 'Yen Audio'):
+    if category not in CATEGORIES:
         return None
 
     title = soup.select_one('h1.heading').text
@@ -46,7 +47,7 @@ def parse(session: Session, link: str, links: dict[str, str]) -> None | tuple[Se
         title = f'{start.group("start")} Volume {vol.group("volume")}'
     series = Series(None, series_title)
     info = set()
-    publisher = imprint if imprint == 'J-Novel Club' else NAME
+    publisher = imprint if imprint in IMPRINTS else NAME
     for format, detail in zip(formats, details):
         if format not in FORMATS:
             continue
@@ -65,7 +66,7 @@ def scrape_full(series: set[Series], info: set[Info]) -> tuple[set[Series], set[
     pages = Table(PAGES, Key)
     today = datetime.date.today()
     cutoff = today - datetime.timedelta(days=180)
-    # no date = not light novel
+    # no date = not manga
     skip = {row.key for row in pages if random() > 0.2 and (not row.date or row.date < cutoff)}
 
     isbns: dict[str, Info] = {inf.isbn: inf for inf in info}

@@ -20,7 +20,7 @@ def main() -> None:
     releases = get_releases()
     current = get_current(releases)
 
-    title = 'Light Novel Releases'
+    title = 'Manga Releases'
     write_page((b for b in current if b.format != Format.AUDIOBOOK),
                HTML, f'# Licensed {title}')
     write_page((b for b in current if b.format.is_digital()),

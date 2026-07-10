@@ -7,6 +7,7 @@ from utils import FORMATS, Info, Series, find_series
 
 NAME = 'Penguin Random House'
 NON_FORMATS = ('Boxed Set', 'Non-traditional book')
+CATEGORIES = ('Manga', 'Manhwa', 'Manhua', 'Webtoon', 'Graphic Novel')
 
 
 def scrape_imprint(session: Session, series: set[Series], info: set[Info],
@@ -24,7 +25,7 @@ def scrape_imprint(session: Session, series: set[Series], info: set[Info],
         serie = find_series(title, series) or Series(None, title)
 
         for variant in book['_embeds'][0]['titles']:
-            if variant['graphicCategory'] != 'Light Novel':
+            if variant['graphicCategory'] not in CATEGORIES:
                 continue
             isbn = variant['isbn']
             date = datetime.date.fromisoformat(variant['onsale'])

@@ -1,7 +1,6 @@
 import datetime
 import json
 import warnings
-from dataclasses import replace
 from itertools import groupby
 from operator import attrgetter
 from urllib.parse import urlparse
@@ -69,30 +68,5 @@ def scrape_full(series: set[Series], info: set[Info]) -> tuple[set[Series], set[
                 uids |= {get_id(i.link): i for i in res[1]}
             except Exception as e:
                 warnings.warn(f'({key}): {e}', RuntimeWarning)
-
-        smap = {uid: smap[i.serieskey] for uid, i in uids.items()}
-        params = {
-            'term': '"Hanashi Media"',
-            'country': 'US',
-            'media': 'ebook',
-            'limit': '200',
-        }
-        page = session.get('https://itunes.apple.com/search', params=params)
-        for result in page.json()['results']:
-            try:
-                link = normalise(None, result['trackViewUrl'])
-                uid = result['trackId']
-                if inf := uids.get(uid):
-                    title = result['trackName']
-                    date = datetime.date.fromisoformat(result['releaseDate'][:10])
-                    uids[uid] = replace(inf, title=title, date=date)
-                elif res := parse(session, smap, 'Hanashi Media', link):
-                    series.add(res[0])
-                    for inf in res[1]:
-                        uid = get_id(inf.link)
-                        uids[uid] = inf
-                        smap[uid] = res[0]
-            except Exception as e:
-                warnings.warn(f'({result["trackViewUrl"]}): {e}', RuntimeWarning)
 
     return series, set(uids.values()) | audiobooks

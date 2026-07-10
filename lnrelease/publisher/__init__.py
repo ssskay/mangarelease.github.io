@@ -10,7 +10,7 @@ from utils import EPOCH, SECONDARY, SOURCES, Book, Format, Info, Series
 
 NAME = 'misc'
 
-PARSE = re.compile(r'(?P<name>.+?)(?:[,:]| [–-])? *(?:\bVol\.|(?:[\(\[]|\b)Volume|\(Light Novel) *0*(?P<volume>\d+(?:\.\d|-[A-Z])?)[\)\]]?(?:(?:[,:]|\s+[–-])? Part (?P<part>\S+)|\s*[:\(].+|\s+[–-]\D+)?')
+PARSE = re.compile(r'(?P<name>.+?)(?:[,:]| [–-])? *(?:\bVol\.|(?:[\(\[]|\b)Volume|\(Manga) *0*(?P<volume>\d+(?:\.\d|-[A-Z])?)[\)\]]?(?:(?:[,:]|\s+[–-])? Part (?P<part>\S+)|\s*[:\(].+|\s+[–-]\D+)?')
 OMNIBUS = re.compile(r'(?P<name>.+?)(?:,|:| [–-]| Omnibus)* *(?:Vol\.|\(?Volumes?) *(?P<volume>\d+(?:\.\d)?-\d+(?:\.\d)?)\)?(?: Collector\'s Edition)?')
 SKIP = re.compile(r'.+? (?:Omnibus \d+|(?:Omnibus|Collector\'s) Edition)')
 PART = re.compile(r'(?P<name>.+?)(?:\s*(?:,|:| [–-]))?(?: Volume| Vol\.)? (?P<volume>\d+(?:\.5)?)[:,]? (?P<part>.+)')
@@ -19,7 +19,7 @@ SHORT = re.compile(r'\s*#?(?P<volume>\w{1,2})')
 EXTRAS = re.compile(r'(?P<name>: Short Stories) (?P<volume>\d+(?:\.5)?)')
 SOURCE = re.compile(r'(?P<volume>\d+(?:\.\d)?[^\s:\),]*):? ?.*')
 URL = re.compile(r'-volume-(?P<volume>\d+)')
-LOOSE = re.compile(r'(?P<name>.+?)(?:,|:| [–-])? *(?:[\(\[]|\b)(?:Vol\.|Volume|Part|Light Novel) *(?P<volume>\d+(?:\.\d+)?)[\)\]]?(?:\s*[:–\-\(]?.+)?')
+LOOSE = re.compile(r'(?P<name>.+?)(?:,|:| [–-])? *(?:[\(\[]|\b)(?:Vol\.|Volume|Part|Manga) *(?P<volume>\d+(?:\.\d+)?)[\)\]]?(?:\s*[:–\-\(]?.+)?')
 
 # number converter for volume parsing
 NUM_DICT = {

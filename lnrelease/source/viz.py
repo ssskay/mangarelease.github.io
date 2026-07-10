@@ -43,11 +43,11 @@ def scrape_full(series: set[Series], info: set[Info], limit: int = 1000) -> tupl
     pages = Table(PAGES, Key)
     today = datetime.date.today()
     cutoff = today - datetime.timedelta(days=365)
-    # no date = not light novel
+    # no date = not manga
     skip = {row.key for row in pages if random() > 0.2 and (not row.date or row.date < cutoff)}
 
     with Session() as session:
-        site = 'https://www.viz.com/search/{}?search=Novel&category=Novel'
+        site = 'https://www.viz.com/search/{}?search=Manga&category=Manga'
         for i in range(1, limit + 1):
             page = session.get(site.format(i))
             soup = BeautifulSoup(page.content, 'lxml')
