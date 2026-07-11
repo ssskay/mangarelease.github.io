@@ -27,6 +27,12 @@ PUB_TAGS = {
 }
 ARTBOOK = re.compile(r'\bart ?(?:book|works)\b|\bthe art of\b|\billustrations?\b|\bsketchbook\b',
                      flags=re.IGNORECASE)
+# American-made comics published by otherwise-Japanese-catalogue houses (mostly
+# Udon's game tie-ins) default to JP/manga without this. These franchises are
+# unambiguously Western; note Mega Man (Ariga), Persona and Blue Archive are
+# genuinely JP/mixed and are deliberately NOT matched -- curate those in origins.csv.
+WESTERN = re.compile(r'\bstreet fighter\b|\bdarkstalkers\b|\bfinal fight\b'
+                     r'|\bdragon\'?s crown\b|\bwakfu\b', flags=re.IGNORECASE)
 
 
 def load_overrides() -> dict[str, tuple[str, str]]:
@@ -56,6 +62,13 @@ def tag(series: Table, info: Table, overrides: dict[str, tuple[str, str]]) -> No
             if signal := PUB_TAGS.get(publisher):
                 s.origin = s.origin or signal[0]
                 s.category = s.category or signal[1]
+        # Western game tie-ins from the mixed houses: override the JP default
+        # (origin), tag as comic where a category isn't already set (keeps
+        # existing artbook/anthology). Gated on publisher so a JP-licensed title
+        # sharing a franchise name elsewhere isn't caught.
+        if WESTERN.search(s.title) and pubs & {'Udon Entertainment', 'Ablaze'}:
+            s.origin = 'other'
+            s.category = s.category or 'comic'
         if not s.origin and pubs and pubs <= JP_PUBLISHERS:
             s.origin = 'JP'
         if not s.category and ARTBOOK.search(s.title):

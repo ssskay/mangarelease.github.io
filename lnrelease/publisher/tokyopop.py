@@ -22,7 +22,8 @@ def parse(series: Series, info: dict[str, list[Info]],
                 fisbns[inf.format].add(inf.isbn)
     if digitals:
         info['Digital'] = []
-        for inf in info['Paperback']:
+        # aggregator-sourced rows may not carry a 'Paperback' format bucket
+        for inf in info.get('Paperback', []):
             info['Digital'].append(digitals.get(inf.title) or
                                    replace(inf, format='Digital', isbn=''))
 

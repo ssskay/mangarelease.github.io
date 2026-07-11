@@ -55,7 +55,7 @@ EPOCH = datetime.date(1, 1, 1)
 
 # origin/category tagging
 ORIGINS = ('JP', 'KR', 'CN', 'other')
-CATEGORIES = ('manga', 'manhwa', 'manhua', 'webtoon', 'artbook', 'anthology')
+CATEGORIES = ('manga', 'manhwa', 'manhua', 'webtoon', 'comic', 'artbook', 'anthology')
 # title markers that identify origin/category before SERIES/TITLE strip them
 MARKERS = {
     'manhwa': ('KR', 'manhwa'),

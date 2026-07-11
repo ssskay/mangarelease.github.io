@@ -1,13 +1,19 @@
 import importlib
+import re
 import warnings
-from collections import defaultdict
+from collections import Counter, defaultdict
 from itertools import groupby
 from operator import attrgetter
 from pathlib import Path
 
 import publisher
 from scrape import INFO, SERIES
-from utils import FORMATS, PRIMARY, SECONDARY, SOURCES, Book, Info, Series, Table
+from utils import DIGITAL, FORMATS, PRIMARY, SECONDARY, SOURCES, Book, Info, Series, Table
+
+# digital serialized chapters (e.g. Square Enix "... #001", "Beast Tamer #097")
+# are not volume releases; keep them out of the calendar. Physical "#" issues
+# (a few Dark Horse single issues) are legitimate and stay.
+CHAPTER = re.compile(r'#\s*\d+')
 
 PUBLISHERS = {}
 for file in Path('lnrelease/publisher').glob('*.py'):
@@ -21,11 +27,22 @@ ARTBOOKS = Path('artbooks.csv')
 def main() -> None:
     series = {row.key: row for row in Table(SERIES, Series)}
     info = Table(INFO, Info)
+    # publishers that produced at least one primary-source row this run. A
+    # PRIMARY publisher's aggregator (SECONDARY) copies are normally dropped as
+    # duplicates of its own scraper's rows -- but only when that scraper
+    # actually ran. If it produced nothing (e.g. Kodansha/VIZ/TOKYOPOP, whose
+    # only rows come from PRH/Crunchyroll), keep the aggregator copies instead
+    # of dropping the publisher entirely.
+    scraped_pubs = {i.publisher for i in info if i.source not in SECONDARY}
     links: defaultdict[str, list[Info]] = defaultdict(list)
     lst: list[Info] = []
     for i in info:
         links[i.link].append(i)
-        if i.source not in SECONDARY or i.publisher not in PRIMARY:
+        if CHAPTER.search(i.title) and i.format in DIGITAL:
+            continue  # digital serialized chapter, not a volume
+        redundant = (i.source in SECONDARY and i.publisher in PRIMARY
+                     and i.publisher in scraped_pubs)
+        if not redundant:
             lst.append(i)
     lst.sort()
     # sort by source then title
@@ -55,6 +72,23 @@ def main() -> None:
             # unresolved series default to the JP manga base rate
             book.origin = serie.origin or 'JP'
             book.category = serie.category or 'manga'
+
+    # collapse the same physical book appearing under more than one series key
+    # (e.g. "Lore Olympus Graphic Novel" vs "Lore Olympus: Volume One", or a
+    # title split across an aggregator and a publisher key). An ISBN identifies
+    # exactly one edition, so same ISBN under two keys is a duplicate; keep the
+    # row on the key that carries the most volumes (the consolidated series).
+    by_isbn: defaultdict[str, list[Book]] = defaultdict(list)
+    for book in books:
+        if book.isbn:
+            by_isbn[book.isbn].append(book)
+    keycount = Counter(book.serieskey for book in books)
+    for dupes in by_isbn.values():
+        if len({b.serieskey for b in dupes}) > 1:
+            canon = max(dupes, key=lambda b: (keycount[b.serieskey], -len(b.serieskey)))
+            for b in dupes:
+                if b.serieskey != canon.serieskey:
+                    books.discard(b)
 
     # art books go to their own file, same schema; the main dataset and the
     # release calendar (built downstream from books.csv) stay manga/comics only
