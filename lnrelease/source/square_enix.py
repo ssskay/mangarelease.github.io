@@ -2,15 +2,21 @@ import datetime
 import json
 import re
 import warnings
+from pathlib import Path
+from random import random
 
 from bs4 import BeautifulSoup
 from session import Session
-from utils import Info, Series
+from utils import Info, Key, Series, Table
 
 NAME = 'Square Enix'
 
 HOST = 'https://squareenixmangaandbooks.square-enix-games.com'
 SERIES = re.compile('/series/')
+# incremental skip-cache: SE has no incremental refresh and 30-600s per-request
+# delays, so a full crawl never finishes. Cache each series/volume page by date
+# and skip settled (past-dated) pages on later runs, re-checking a random 20%.
+PAGES = Path('square_enix.csv')
 
 
 def get_format(s: str) -> str:
@@ -46,6 +52,12 @@ def parse(session: Session, series: Series, link: str, index: int) -> set[Info]:
 
 
 def scrape_full(series: set[Series], info: set[Info], limit: int = 0) -> tuple[set[Series], set[Info]]:
+    pages = Table(PAGES, Key)
+    today = datetime.date.today()
+    cutoff = today - datetime.timedelta(days=365)
+    # settled pages (past-dated, seen before) are skipped 80% of the time
+    skip = {row.key for row in pages if random() > 0.2 and row.date and row.date < cutoff}
+
     with Session() as session:
         page = session.get(f'{HOST}/en-us/series')
         soup = BeautifulSoup(page.content, 'lxml')
@@ -55,23 +67,38 @@ def scrape_full(series: set[Series], info: set[Info], limit: int = 0) -> tuple[s
             title = x.find(class_='p-1').text
             if '(Light Novel)' in title or '(Novel)' in title:
                 continue
+            link = f'{HOST}{x["href"]}'
+            if link in skip:  # whole series settled -> skip its series + volume fetches
+                continue
             if limit and kept >= limit:
                 break
             kept += 1
             try:
-                link = f'{HOST}{x["href"]}'
                 page = session.get(link)
                 soup = BeautifulSoup(page.content, 'lxml')
                 volumes = soup.select('div:has(div:-soup-contains("VOLUMES")) > a')
                 serie = Series(None, title)
-                index = 1
-                for volume in volumes:
-                    if inf := parse(session, serie, f'{HOST}{volume["href"]}', index):
+                latest = None
+                for index, volume in enumerate(volumes, 1):
+                    vlink = f'{HOST}{volume["href"]}'
+                    if vlink in skip:
+                        continue
+                    if inf := parse(session, serie, vlink, index):
                         series.add(serie)
                         info.update(inf)
-                        index += 1
+                        vdate = next(iter(inf)).date
+                        pages.discard(Key(vlink, vdate))
+                        pages.add(Key(vlink, vdate))
+                        if latest is None or vdate > latest:
+                            latest = vdate
+                # cache the series by its newest volume date so settled series
+                # (all volumes released long ago) can be skipped wholesale later
+                if latest:
+                    pages.discard(Key(link, latest))
+                    pages.add(Key(link, latest))
             except Exception as e:
                 warnings.warn(f'({link}): {e}', RuntimeWarning)
         print(f'{NAME}: {kept} of {len(lst)} series kept', flush=True)
 
+    pages.save()
     return series, info
