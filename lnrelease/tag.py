@@ -20,10 +20,14 @@ JP_PUBLISHERS = {
     'Udon Entertainment',
     'VIZ Media',
 }
-# publisher-level origin/category signals
+# publisher-level origin/category signals. Only for imprints with a single
+# consistent origin. WEBTOON Unscrolled is deliberately absent: it is a mixed
+# imprint (Korean manhwa like Tower of God AND western webtoons like Cursed
+# Princess Club), so origin must be resolved per title (origins.csv), never
+# defaulted to one country -- a blanket 'other'/'webtoon' here is what mistagged
+# every Korean WEBTOON title.
 PUB_TAGS = {
     'Ize Press': ('KR', 'manhwa'),
-    'WEBTOON Unscrolled': ('other', 'webtoon'),
 }
 ARTBOOK = re.compile(r'\bart ?(?:book|works)\b|\bthe art of\b|\billustrations?\b|\bsketchbook\b',
                      flags=re.IGNORECASE)

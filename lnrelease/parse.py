@@ -73,21 +73,23 @@ def main() -> None:
             book.origin = serie.origin or 'JP'
             book.category = serie.category or 'manga'
 
-    # collapse the same physical book appearing under more than one series key
+    # collapse the same edition appearing more than once: across series keys
     # (e.g. "Lore Olympus Graphic Novel" vs "Lore Olympus: Volume One", or a
-    # title split across an aggregator and a publisher key). An ISBN identifies
-    # exactly one edition, so same ISBN under two keys is a duplicate; keep the
-    # row on the key that carries the most volumes (the consolidated series).
-    by_isbn: defaultdict[str, list[Book]] = defaultdict(list)
+    # title split under an aggregator and a publisher key) or under one key with
+    # differing titles (a merged dup key). An ISBN + format identifies exactly
+    # one edition, so keep a single row per (ISBN, format) -- on the key that
+    # carries the most volumes (the consolidated series). Keying on format too
+    # preserves distinct Digital vs eBook rows that legitimately share an ISBN.
+    by_edition: defaultdict[tuple[str, str], list[Book]] = defaultdict(list)
     for book in books:
         if book.isbn:
-            by_isbn[book.isbn].append(book)
+            by_edition[(book.isbn, book.format)].append(book)
     keycount = Counter(book.serieskey for book in books)
-    for dupes in by_isbn.values():
-        if len({b.serieskey for b in dupes}) > 1:
+    for dupes in by_edition.values():
+        if len(dupes) > 1:
             canon = max(dupes, key=lambda b: (keycount[b.serieskey], -len(b.serieskey)))
             for b in dupes:
-                if b.serieskey != canon.serieskey:
+                if b is not canon:
                     books.discard(b)
 
     # art books go to their own file, same schema; the main dataset and the
