@@ -218,3 +218,34 @@ Kodansha coverage went **0% → 100%** (May) / **78%** (June). It did **not** re
 ---
 
 *Caveats:* Yatta-Tachi is not exhaustive (denominator slightly under-counts Yen/Seven Seas, which `books.csv` covers well → reported coverage is a conservative floor). Square Enix's own scraper is known-throttled (30–600 s delays, no skip-cache), so its `info.csv` presence is partial and its numbers are noted separately, not folded into the primary-publisher accuracy claims.
+
+---
+
+## Follow-up — 2026-07-11 (VIZ rebuild + Square Enix cache)
+
+Continued from the fixes above. Committed the Part-1 fixes, then rebuilt the VIZ scraper and added a Square Enix skip-cache. Dataset now **20,613 rows**.
+
+**VIZ scraper — diagnosed and rebuilt.** VIZ produced zero rows not because of broken code — the search and product-page selectors parse fine against live viz.com — but because it never *completed*: paging the whole catalogue at 30–60 s/request times out and `viz.csv` was never populated (CI-runner IP blocking likely compounds it). Rebuilt to **seed from the monthly release calendar** (`viz.com/calendar/YYYY/MM`) for a recent+upcoming window first, so the important data lands even if the deep search crawl is cut short; the full crawl remains as backfill. Also fixed a latent `store/viz.py` crash on non-`manga` category URLs. Ran the calendar scrape: **441 VIZ rows, May–Nov 2026**. A 5-row spot-check against viz.com product pages matched date/ISBN/volume 5/5; VIZ series tag JP/manga with zero review-queue churn.
+
+**Square Enix — skip-cache added (not run live).** Gave `source/square_enix.py` the same incremental skip-cache VIZ uses (cache series+volume pages by date; skip settled past-dated pages, re-check 20%), so repeat runs skip the expensive per-volume fetches. Logic validated; not run live to avoid hammering SE's rate-sensitive endpoint — the full populate rides with the weekly cron. Chapter guard intact (`Chapters (Digital)` → `None`); SE books remain volumes-only.
+
+### Coverage progression (same May/June 2026 ground truth, same matcher)
+
+| Month | Original audit | After Part-1 fixes | **After VIZ** | Bar |
+|---|---|---|---|---|
+| May 2026 | 32.2% | 48.3% | **73.7%** | ≥95% |
+| June 2026 | 26.4% | 45.3% | **79.2%** | ≥95% |
+
+VIZ itself went **3% → 100%** (May) and **0% → 97%** (June); Kodansha **0% → 100% / 78%**.
+
+**Verdict: the ≥95% bar is not yet met (73.7% / 79.2%).** The single biggest blocker (VIZ, a top-3 publisher) is resolved. What remains, in order of impact:
+
+1. **Square Enix (0%)** — scraper skip-cache is in place but not yet populated; the next weekly cron should fill ~8–10 releases/month.
+2. **TOKYOPOP (0% / 20%)** — no working primary scraper; its rows come from PRH, which hasn't listed the May/June titles. Known residual; the cron's PRH refresh should fill it. Not chased here.
+3. **Seven Seas 77% / Yen 56%–95% residual** — a mix of match-normalizer artifacts (title variants) and genuinely-not-yet-scraped recent 2026 volumes; closes as the daily cron refreshes.
+
+Once Square Enix populates and TOKYOPOP/PRH catches up via the cron, coverage should clear ~90%+; the last few points are the long tail of just-announced volumes that any calendar trails by a refresh cycle.
+
+**Still deferred** (unchanged, per plan): Seven Seas comma-in-subtitle → volume parse bug; Lore-Olympus-style word-number volume parsing; Ablaze/Udon/One Peace date backfills; J-Novel ISBN backfill. **CI determinism** is now handled — `PYTHONHASHSEED=0` pinned in `python.yml`.
+
+*Infra caveat (from the merge reconciliation):* the CI runs without Cloudflare, so its Seven Seas / Dark Horse scrapers return 0 primary rows; the local Cloudflare-scraped data for those was preserved by union, but a future daily CI run may wipe it. The Cloudflare/CI decision is separate from this work.
