@@ -24,6 +24,11 @@ permissions:
   pages: write
   id-token: write
 
+# deterministic set iteration so parse.py output (and thus committed CSV diffs)
+# is stable run-to-run — e.g. the Honkai Impact 3rd v3 two-ISBN slot flip
+env:
+  PYTHONHASHSEED: '0'
+
 jobs:
   update:
     runs-on: ubuntu-latest
