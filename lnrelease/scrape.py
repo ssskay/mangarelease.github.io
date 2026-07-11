@@ -9,7 +9,7 @@ from pathlib import Path
 from threading import Thread
 from time import time
 
-from session import CF_ACCOUNT, REQUEST_STATS
+from session import REQUEST_STATS
 from utils import SOURCES, Info, Series, Table
 
 MODULES = {s.stem: importlib.import_module(f'source.{s.stem}') for s in Path('lnrelease/source').glob('*.py')}
@@ -44,9 +44,6 @@ def worker(future: Future, fn, *args) -> None:
 
 
 def main(only: set[str] | None = None) -> None:
-    if not CF_ACCOUNT and os.environ.get('GITHUB_EVENT_NAME') == 'schedule':
-        return
-
     if unknown := (only or set()) - set(MODULES):
         warnings.warn(f'Unknown sources: {sorted(unknown)}; '
                       f'available: {sorted(MODULES)}', RuntimeWarning)
