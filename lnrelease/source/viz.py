@@ -106,9 +106,14 @@ def scrape_full(series: set[Series], info: set[Info], limit: int = 1000) -> tupl
             if link not in skip:
                 handle(session, link, series, info, pages)
 
-        # deep backfill: page through the full manga catalogue
+        # deep backfill: page through the full manga catalogue. NB viz.com's
+        # robots.txt disallows /search, so session.get returns None and this
+        # loop stops immediately -- the calendar seeding above is the real
+        # source; the crawl only runs where a host permits it.
         for i in range(1, limit + 1):
             page = session.get(SEARCH.format(i))
+            if page is None:
+                break
             soup = BeautifulSoup(page.content, 'lxml')
             results = soup.select('div#results > article > div > a')
             for a in results:

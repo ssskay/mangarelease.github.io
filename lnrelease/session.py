@@ -8,6 +8,7 @@ from threading import Lock
 from time import perf_counter_ns, sleep, time
 from typing import Self
 from urllib.parse import urlencode, urljoin, urlparse
+from urllib.robotparser import RobotFileParser
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -119,6 +120,26 @@ class Limiter:
 
 
 LIMITERS: dict[str, Limiter] = {}
+
+# robots.txt cache, one parser per host (None = no robots / unfetchable = allow all)
+ROBOTS: dict[str, RobotFileParser | None] = {}
+ROBOTS_LOCK = Lock()
+
+
+def robots_allowed(url: str) -> bool:
+    """Respect the target host's robots.txt (fetched and cached once per host)."""
+    netloc = urlparse(url).netloc
+    if netloc not in ROBOTS:
+        rp: RobotFileParser | None = RobotFileParser()
+        try:
+            resp = requests.get(f'https://{netloc}/robots.txt', headers=HEADERS, timeout=10)
+            rp.parse(resp.text.splitlines() if resp.status_code == 200 else [])
+        except requests.exceptions.RequestException:
+            rp = None  # unreachable robots -> don't block
+        with ROBOTS_LOCK:
+            ROBOTS.setdefault(netloc, rp)
+    rp = ROBOTS.get(netloc)
+    return rp is None or rp.can_fetch(HEADERS['User-Agent'], url)
 
 
 def limiter(netloc: str) -> Limiter:
@@ -274,6 +295,12 @@ class Session(requests.Session):
         kwargs.setdefault('timeout', 100)
         if match := IA.fullmatch(url):
             url = match.group('url')
+
+        # goodwill: never fetch a path the host's robots.txt disallows (this also
+        # skips the cf/ia fallbacks below -- a disallowed page stays unfetched)
+        if not robots_allowed(url):
+            warnings.warn(f'robots.txt disallows {url}; skipping', RuntimeWarning)
+            return None
 
         page = self.try_get(url, retries=5, **kwargs) if direct else None
         if page is None or page.status_code == 403:
