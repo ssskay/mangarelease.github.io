@@ -152,6 +152,7 @@
 |Aug 25|[The War of Greedy Witches](https://yenpress.com/titles/9798855401486-the-war-of-greedy-witches-vol-5 "Yen Press")|5|Yen Press|🖥️📖|
 |Aug 25|[Welcome to Demon School! Iruma-kun: IruMafia Edition](https://www.penguinrandomhouse.com/books/834155/welcome-to-demon-school-iruma-kun-irumafia-edition-5-by-osamu-nishi/9781647296032 "Kodansha")|5|Kodansha|🖥️📖|
 |Aug 25|[What Does the Fox Say?](https://yenpress.com/titles/9798855423921-what-does-the-fox-say-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
+|Aug 26|[Ascendance of a Bookworm Part 4](https://j-novel.club/series/ascendance-of-a-bookworm-manga#volume-31 "J-Novel Club")|7|J-Novel Club|🖥️<span class="hidden">📖</span>|
 |Aug 26|[Last Summer Sparkle](https://j-novel.club/series/last-summer-sparkle#volume-1 "J-Novel Club")|1|J-Novel Club|🖥️<span class="hidden">📖</span>|
 |Aug 26|[Sweet Reincarnation](https://j-novel.club/series/sweet-reincarnation#volume-13 "J-Novel Club")|13|J-Novel Club|🖥️<span class="hidden">📖</span>|
 
@@ -173,6 +174,7 @@
 |Sep 15|[Marriage of Convenience](https://yenpress.com/titles/9798400905278-marriage-of-convenience-vol-5 "Ize Press")|5|Ize Press|🖥️📖|
 |Sep 15|[My Useless “Cuddle” Skill Awakened, and Now I'm Building the Ultimate Harem!](https://sevenseasentertainment.com/books/my-useless-cuddle-skill-awakened-and-now-im-building-the-ultimate-harem-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Sep 15|[The Devil's in the Lunch Deals](https://www.penguinrandomhouse.com/books/833372/the-devils-in-the-lunch-deals-volume-1-by-ishiko/9781427888723 "TOKYOPOP")|1|TOKYOPOP|🖥️📖|
+|Sep 16|[Black Summoner](https://j-novel.club/series/black-summoner-manga#volume-23 "J-Novel Club")|23|J-Novel Club|🖥️<span class="hidden">📖</span>|
 |Sep 19|[Fired? But I Maintain All the Software!](https://j-novel.club/series/fired-but-i-maintain-all-the-software-manga#volume-4 "J-Novel Club")|4|J-Novel Club|🖥️<span class="hidden">📖</span>|
 |Sep 22|[Agents of the Four Seasons: Dance of Spring](https://yenpress.com/titles/9798855426540-agents-of-the-four-seasons-dance-of-spring-vol-5 "Yen Press")|5|Yen Press|🖥️📖|
 |Sep 22|[A Pen, Handcuffs, and a Common-Law Marriage](https://yenpress.com/titles/9798855417937-a-pen-handcuffs-and-a-common-law-marriage-vol-2 "Yen Press")|2|Yen Press|🖥️📖|
