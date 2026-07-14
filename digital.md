@@ -1,3 +1,8 @@
+---
+title: "Digital Manga Releases"
+description: "Digital and ebook releases for licensed English manga, manhwa, manhua & webtoons — upcoming volumes with dates and publishers, updated daily."
+---
+
 # Digital Manga Releases
 
 - toc
@@ -30,15 +35,11 @@
 |Jul 14|[Akira Failing in Love](https://www.viz.com/manga-books/manga/akira-failing-in-love-volume-3-0/product/8890/paperback "VIZ Media")|3|VIZ Media|🖥️📖|
 |Jul 14|[Beyblade X](https://www.viz.com/manga-books/manga/beyblade-x-volume-6-0/product/8891/paperback "VIZ Media")|6|VIZ Media|🖥️📖|
 |Jul 14|[Case Closed](https://www.viz.com/manga-books/manga/case-closed-volume-99-0/product/8897/paperback "VIZ Media")|99|VIZ Media|🖥️📖|
-|Jul 14|[Catnaps, Catnaps Everywhere!](https://sevenseasentertainment.com/books/catnaps-catnaps-everywhere/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Jul 14|[Champion of the Rose](https://www.viz.com/manga-books/graphic-novel/champion-of-the-rose-volume-1-0/product/8898/paperback "VIZ Media")|1|VIZ Media|🖥️📖|
 |Jul 14|[DRAGON CIRCUS](https://www.penguinrandomhouse.com/books/815069/dragon-circus-1-by-eiichi-shimizu/9781647295875 "Kodansha")|1|Kodansha|🖥️<span class="hidden">📖</span>|
 |Jul 14|[Firefly Wedding](https://www.viz.com/manga-books/manga/firefly-wedding-volume-7-0/product/8901/paperback "VIZ Media")|7|VIZ Media|🖥️📖|
-|Jul 14|[I'm Fine With Being the Second Girlfriend](https://sevenseasentertainment.com/books/im-fine-with-being-the-second-girlfriend-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Jul 14|[I Want to End This Love Game](https://www.viz.com/manga-books/manga/i-want-to-end-this-love-game-volume-7-0/product/8899/paperback "VIZ Media")|7|VIZ Media|🖥️📖|
 |Jul 14|[Destroy All Humans. They Can't Be Regenerated. A Magic: The Gathering Manga](https://www.viz.com/manga-books/manga/destroy-all-humankind-they-can-t-be-regenerated-a-magic-the-gathering-manga-volume-8-0/product/8903/paperback "VIZ Media")|8|VIZ Media|🖥️📖|
-|Jul 14|[Marriage to the Wolf: An Interspecies Union](https://sevenseasentertainment.com/books/marriage-to-the-wolf-an-interspecies-union-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
-|Jul 14|[Mistress Kanan is Devilishly Easy (Omnibus)](https://sevenseasentertainment.com/books/mistress-kanan-is-devilishly-easy-omnibus-vol-1-2/ "Seven Seas Entertainment")|1-2|Seven Seas Entertainment|🖥️📖|
 |Jul 14|[Sora & Haena!](https://www.penguinrandomhouse.com/books/752052/sora-and-haena-volume-1-by-jackbull/9780593872970 "Inklore")|1|Inklore|🖥️📖|
 |Jul 14|[Star Wars Visions: Tsukumo](https://www.viz.com/manga-books/manga/star-wars-visions-tsukumo-volume-1-0/product/8915/paperback "VIZ Media")|1|VIZ Media|🖥️📖|
 |Jul 14|[Yaiba: Samurai Legend](https://www.viz.com/manga-books/manga/yaiba-volume-5-0/product/8920/paperback "VIZ Media")|5|VIZ Media|🖥️📖|
@@ -442,7 +443,6 @@
 |Nov 03|[Girl Meets Rock!](https://sevenseasentertainment.com/books/girl-meets-rock-vol-2/ "Seven Seas Entertainment")|2|Seven Seas Entertainment|🖥️📖|
 |Nov 03|[Heaven Official's Blessing (The Comic)](https://www.penguinrandomhouse.com/books/784696/heaven-officials-blessing-the-comic-volume-3-by-original-story-by-mo-xiang-tong-xiu-art-by-starember/9780593984420 "Inklore")|3|Inklore|🖥️📖|
 |Nov 03|[Hotel Inhumans](https://sevenseasentertainment.com/books/hotel-inhumans-vol-2/ "Seven Seas Entertainment")|2|Seven Seas Entertainment|🖥️📖|
-|Nov 03|[I'm Fine With Being the Second Girlfriend](https://sevenseasentertainment.com/books/im-fine-with-being-the-second-girlfriend-vol-2/ "Seven Seas Entertainment")|2|Seven Seas Entertainment|🖥️📖|
 |Nov 03|[KPop Demon Hunters: The Official Screen Comic Boxed Set](https://www.penguinrandomhouse.com/books/828178/kpop-demon-hunters-the-official-screen-comic-boxed-set-by-netflix/9798217373918 "Inklore")|1|Inklore|🖥️<span class="hidden">📖</span>|
 |Nov 03|[Miss Kobayashi's Dragon Maid: Ilulu Doesn't Understand Love](https://sevenseasentertainment.com/books/miss-kobayashis-dragon-maid-ilulu-doesnt-understand-love-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Nov 03|[Record of Lusty Warriors: The Rod Master's Unstoppable Conquest in Another World](https://sevenseasentertainment.com/books/record-of-lusty-warriors-the-rod-masters-unstoppable-conquest-in-another-world-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
@@ -461,7 +461,6 @@
 |Nov 17|[Konohana Kitan](https://www.penguinrandomhouse.com/books/833311/konohana-kitan-volume-16-by-sakuya-amano/9781427888518 "TOKYOPOP")|16|TOKYOPOP|🖥️📖|
 |Nov 17|[Lady Devil](https://yenpress.com/titles/9798400905070-lady-devil-vol-7 "Ize Press")|7|Ize Press|🖥️📖|
 |Nov 17|[Lazy Girl Momogusa](https://sevenseasentertainment.com/books/lazy-girl-momogusa-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
-|Nov 17|[Marriage to the Wolf: An Interspecies Union](https://sevenseasentertainment.com/books/marriage-to-the-wolf-an-interspecies-union-vol-2/ "Seven Seas Entertainment")|2|Seven Seas Entertainment|🖥️📖|
 |Nov 17|[My Secretly Hot Husband](https://yenpress.com/titles/9798400905193-my-secretly-hot-husband-vol-7 "Ize Press")|7|Ize Press|🖥️📖|
 |Nov 17|[Overgeared](https://yenpress.com/titles/9798400905476-overgeared-vol-12 "Ize Press")|12|Ize Press|🖥️📖|
 |Nov 17|[Puniru is a Kawaii Slime (Omnibus)](https://sevenseasentertainment.com/books/puniru-is-a-kawaii-slime-omnibus-vol-3-4/ "Seven Seas Entertainment")|3-4|Seven Seas Entertainment|🖥️📖|
@@ -492,7 +491,6 @@
 |Nov 24|[Let This Grieving Soul Retire](https://yenpress.com/titles/9798855433951-let-this-grieving-soul-retire-vol-11-manga "Yen Press")|11|Yen Press|🖥️📖|
 |Nov 24|[Liste Rouge](https://yenpress.com/titles/9798855438451-liste-rouge-vol-2 "Yen Press")|2|Yen Press|🖥️📖|
 |Nov 24|[Magical Midlifer](https://yenpress.com/titles/9798855408096-magical-midlifer-vol-3 "Yen Press")|3|Yen Press|🖥️📖|
-|Nov 24|[Mistress Kanan is Devilishly Easy (Omnibus)](https://sevenseasentertainment.com/books/mistress-kanan-is-devilishly-easy-omnibus-vol-3-4/ "Seven Seas Entertainment")|3-4|Seven Seas Entertainment|🖥️📖|
 |Nov 24|[Moscow 2160](https://yenpress.com/titles/9798855432145-moscow-2160-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
 |Nov 24|[My Girlfriend Is a Colossal Cutie](https://yenpress.com/titles/9798855432725-my-girlfriend-is-a-colossal-cutie-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
 |Nov 24|[Non and Akari: The Complete Omnibus](https://yenpress.com/titles/9798855420630-non-and-akari-the-complete-omnibus "Yen Press")|1|Yen Press|🖥️📖|
@@ -668,6 +666,7 @@
 |Apr 06|[Heaven Official's Blessing (The Comic)](https://www.penguinrandomhouse.com/books/784698/heaven-officials-blessing-the-comic-volume-5-by-original-story-by-mo-xiang-tong-xiu-art-by-starember/9780593984482 "Inklore")|5|Inklore|🖥️📖|
 |Apr 06|[What If My Human Didn't Come Home?](https://sevenseasentertainment.com/books/what-if-my-human-didnt-come-home/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Apr 13|[Hate Me, but Let Me Stay – Manager and Otoha](https://sevenseasentertainment.com/books/hate-me-but-let-me-stay-manager-and-otoha/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
+|Apr 13|[Under the Oak Tree](https://www.penguinrandomhouse.com/books/826744/under-the-oak-tree-volume-4-the-comic-by-original-story-by-suji-kim-art-by-p-adapted-by-seomal/9798217301829 "Inklore")|4|Inklore|🖥️📖|
 |Apr 27|[I Reincarnated as the “Villain” Commander of an Order of Knights](https://sevenseasentertainment.com/books/i-reincarnated-as-the-villain-commander-of-an-order-of-knights-manga-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 
 ### May
