@@ -211,7 +211,7 @@ description: "Digital and ebook releases for licensed English manga, manhwa, man
 |Aug 25|[Playing Death Games to Put Food on the Table](https://yenpress.com/titles/9798855420876-playing-death-games-to-put-food-on-the-table-vol-1-manga "Yen Press")|1|Yen Press|🖥️📖|
 |Aug 25|[Raul and His Vampire Prince](https://sevenseasentertainment.com/books/raul-and-his-vampire-prince-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Aug 25|[Rock Is a Lady's Modesty](https://yenpress.com/titles/9798855408010-rock-is-a-lady-s-modesty-vol-3 "Yen Press")|3|Yen Press|🖥️📖|
-|Aug 25|[Sanctuary Priestess](https://www.penguinrandomhouse.com/books/833335/sanctuary-priestess-volume-1-by-odayaka/9781427887535 "TOKYOPOP")|1|TOKYOPOP|🖥️📖|
+|Aug 25|[Sanctuary Priestess](https://www.penguinrandomhouse.com/books/833335/sanctuary-priestess-volume-1-by-odayaka/9781427892058 "TOKYOPOP")|1|TOKYOPOP|🖥️<span class="hidden">📖</span>|
 |Aug 25|[Shy](https://yenpress.com/titles/9798855402551-shy-vol-13 "Yen Press")|13|Yen Press|🖥️📖|
 |Aug 25|[Sister and Giant: A Young Lady Is Reborn in Another World](https://yenpress.com/titles/9798855423297-sister-and-giant-a-young-lady-is-reborn-in-another-world-vol-6 "Yen Press")|6|Yen Press|🖥️📖|
 |Aug 25|[Stray Cat & Wolf](https://yenpress.com/titles/9798855423419-stray-cat-wolf-vol-5 "Yen Press")|5|Yen Press|🖥️📖|
@@ -667,6 +667,8 @@ description: "Digital and ebook releases for licensed English manga, manhwa, man
 |Apr 06|[What If My Human Didn't Come Home?](https://sevenseasentertainment.com/books/what-if-my-human-didnt-come-home/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Apr 13|[Hate Me, but Let Me Stay – Manager and Otoha](https://sevenseasentertainment.com/books/hate-me-but-let-me-stay-manager-and-otoha/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Apr 13|[Under the Oak Tree](https://www.penguinrandomhouse.com/books/826744/under-the-oak-tree-volume-4-the-comic-by-original-story-by-suji-kim-art-by-p-adapted-by-seomal/9798217301829 "Inklore")|4|Inklore|🖥️📖|
+|Apr 20|[Disney The Haunted Mansion](https://www.penguinrandomhouse.com/books/833208/disney-the-haunted-mansion-by-sammie-crowley/9781427888358 "TOKYOPOP")|2|TOKYOPOP|🖥️📖|
+|Apr 20|[Welcome to Demon School! Iruma-kun](https://www.penguinrandomhouse.com/books/840412/welcome-to-demon-school-iruma-kun-25-by-osamu-nishi/9781647296667 "Kodansha")|25|Kodansha|🖥️📖|
 |Apr 27|[I Reincarnated as the “Villain” Commander of an Order of Knights](https://sevenseasentertainment.com/books/i-reincarnated-as-the-villain-commander-of-an-order-of-knights-manga-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 
 ### May
