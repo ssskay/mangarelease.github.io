@@ -1016,7 +1016,7 @@ description: "Physical print releases for licensed English manga, manhwa, manhua
 |Dec 01|[Rozen Maiden Collector's Edition](https://sevenseasentertainment.com/books/rozen-maiden-collectors-edition-vol-7/ "Seven Seas Entertainment")|7|Seven Seas Entertainment|<span class="hidden">🖥️</span>📖|
 |Dec 01|[Shugo Chara! 20th Anniversary Edition](https://www.penguinrandomhouse.com/books/813112/shugo-chara-20th-anniversary-edition-4-by-peach-pit/9798888777077 "Kodansha")|4|Kodansha|<span class="hidden">🖥️</span>📖|
 |Dec 01|[Strange Pictures](https://www.penguinrandomhouse.com/books/841780/strange-pictures-vol3-by-written-by-uketsu/9781806185061 "Titan Comics")|3|Titan Comics|<span class="hidden">🖥️</span>📖|
-|Dec 01|[That Time I Got Reincarnated as a Slime](https://www.penguinrandomhouse.com/books/826300/that-time-i-got-reincarnated-as-a-slime-30-by-fuse/9798888779156 "Kodansha")|30|Kodansha|<span class="hidden">🖥️</span>📖|
+|Dec 01|[That Time I Got Reincarnated as a Slime](https://www.penguinrandomhouse.com/books/826300/that-time-i-got-reincarnated-as-a-slime-30-by-story-by-fuse-art-by-taiki-kawakami-character-designs-by-mitz-vah/9798888779156 "Kodansha")|30|Kodansha|<span class="hidden">🖥️</span>📖|
 |Dec 01|[The Cuckolding Wizard's Adventure](https://sevenseasentertainment.com/books/the-cuckolding-wizards-adventure-vol-4/ "Seven Seas Entertainment")|4|Seven Seas Entertainment|<span class="hidden">🖥️</span>📖|
 |Dec 01|[The Death Defying Princess Creates a Yuri Harem to Survive](https://sevenseasentertainment.com/books/the-death-defying-princess-creates-a-yuri-harem-to-survive-vol-2/ "Seven Seas Entertainment")|2|Seven Seas Entertainment|🖥️📖|
 |Dec 01|[The Skull Dragon's Precious Daughter](https://sevenseasentertainment.com/books/the-skull-dragons-precious-daughter-vol-6/ "Seven Seas Entertainment")|6|Seven Seas Entertainment|<span class="hidden">🖥️</span>📖|
@@ -1242,7 +1242,7 @@ description: "Physical print releases for licensed English manga, manhwa, manhua
 |Jan 26|[That's Not Love](https://www.penguinrandomhouse.com/books/813101/thats-not-love-5-by-peko-watanabe/9798888777565 "Kodansha")|5|Kodansha|<span class="hidden">🖥️</span>📖|
 |Jan 26|[The Dangers in My Heart: The Romantic Comedy Won't Start](https://sevenseasentertainment.com/books/the-dangers-in-my-heart-the-romantic-comedy-wont-start-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Jan 26|[The One-Eyed, One-Armed, One-Legged Sorcerer](https://sevenseasentertainment.com/books/the-one-eyed-one-armed-one-legged-sorcerer-manga-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
-|Jan 26|[Versus](https://www.penguinrandomhouse.com/books/830914/versus-6-by-one/9798888779880 "Kodansha")|6|Kodansha|<span class="hidden">🖥️</span>📖|
+|Jan 26|[Versus](https://www.penguinrandomhouse.com/books/830914/versus-6-by-story-by-one-manga-by-kyoutarou-azuma-organized-by-bose/9798888779880 "Kodansha")|6|Kodansha|<span class="hidden">🖥️</span>📖|
 |Jan 26|[Welcome to Demon School! Iruma-kun: IruMafia Edition](https://www.penguinrandomhouse.com/books/840434/welcome-to-demon-school-iruma-kun-irumafia-edition-7-by-osamu-nishi/9781647296865 "Kodansha")|7|Kodansha|🖥️📖|
 |Jan 26|[Your Meteor, Hidden in Flowers](https://sevenseasentertainment.com/books/your-meteor-hidden-in-flowers-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 
@@ -1397,7 +1397,7 @@ description: "Physical print releases for licensed English manga, manhwa, manhua
 |Apr 06|[Shimazaki in the Land of Peace](https://www.penguinrandomhouse.com/books/840449/shimazaki-in-the-land-of-peace-11-by-gouten-hamada/9781647296636 "Kodansha")|11|Kodansha|<span class="hidden">🖥️</span>📖|
 |Apr 06|[Shugo Chara! 20th Anniversary Edition](https://www.penguinrandomhouse.com/books/813113/shugo-chara-20th-anniversary-edition-5-by-peach-pit/9798888777084 "Kodansha")|5|Kodansha|<span class="hidden">🖥️</span>📖|
 |Apr 06|[Star Catcher, vol. 1](https://www.penguinrandomhouse.com/books/833613/star-catcher-vol-1-by-ro-taniah/9781834110615 "WEBTOON Unscrolled")|1|WEBTOON Unscrolled|<span class="hidden">🖥️</span>📖|
-|Apr 06|[That Time I Got Reincarnated as a Slime](https://www.penguinrandomhouse.com/books/845104/that-time-i-got-reincarnated-as-a-slime-31-by-fuse/9798900741260 "Kodansha")|31|Kodansha|<span class="hidden">🖥️</span>📖|
+|Apr 06|[That Time I Got Reincarnated as a Slime](https://www.penguinrandomhouse.com/books/845104/that-time-i-got-reincarnated-as-a-slime-31-by-story-by-fuse-art-by-taiki-kawakami-character-designs-by-mitz-vah/9798900741260 "Kodansha")|31|Kodansha|<span class="hidden">🖥️</span>📖|
 |Apr 06|[The Seven Deadly Sins: Four Knights of the Apocalypse](https://www.penguinrandomhouse.com/books/845111/the-seven-deadly-sins-four-knights-of-the-apocalypse-25-by-nakaba-suzuki/9798900741338 "Kodansha")|25|Kodansha|<span class="hidden">🖥️</span>📖|
 |Apr 06|[The Sky Is But One Roof of the World](https://www.darkhorse.com/books/3017-834/sky-is-but-one-roof-of-the-world-tpb/ "Dark Horse")|1|Dark Horse|<span class="hidden">🖥️</span>📖|
 |Apr 06|[What If My Human Didn't Come Home?](https://sevenseasentertainment.com/books/what-if-my-human-didnt-come-home/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
