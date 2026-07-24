@@ -81,11 +81,11 @@ description: "Digital and ebook releases for licensed English manga, manhwa, man
 |Jul 28|[Elden Ring: The Road to the Erdtree](https://yenpress.com/titles/9798855437898-elden-ring-the-road-to-the-erdtree-vol-9 "Yen Press")|9|Yen Press|🖥️📖|
 |Jul 28|[Fruit of the Underworld](https://www.penguinrandomhouse.com/books/815068/fruit-of-the-underworld-2-by-aya-kanno/9781647295899 "Kodansha")|2|Kodansha|🖥️📖|
 |Jul 28|[Futari Switch](https://yenpress.com/titles/9798855413274-futari-switch-vol-3 "Yen Press")|3|Yen Press|🖥️📖|
+|Jul 28|[The Crow's Ballad at Dawn](https://yenpress.com/titles/9798855425314-the-crow-s-ballad-at-dawn "Yen Press")|1|Yen Press|🖥️📖|
 |Jul 28|[I Kept Pressing the 100-Million-Year Button and Came Out on Top](https://yenpress.com/titles/9798855427752-i-kept-pressing-the-100-million-year-button-and-came-out-on-top-vol-8-manga "Yen Press")|8|Yen Press|🖥️📖|
 |Jul 28|[Imitation](https://yenpress.com/titles/9798855412802-imitation-vol-9 "Yen Press")|9|Yen Press|🖥️📖|
 |Jul 28|[In Another World with My Smartphone](https://yenpress.com/titles/9798855424171-in-another-world-with-my-smartphone-vol-16-manga "Yen Press")|16|Yen Press|🖥️📖|
 |Jul 28|[JoJo's Bizarre Adventure: Part 7--Steel Ball Run](https://www.viz.com/manga-books/manga/jojo-s-bizarre-adventure-part-7-steel-ball-run-volume-8-0/product/8902/hardcover "VIZ Media")|8|VIZ Media|🖥️📖|
-|Jul 28|[The Crow's Ballad at Dawn](https://yenpress.com/titles/9798855425314-the-crow-s-ballad-at-dawn "Yen Press")|1|Yen Press|🖥️📖|
 |Jul 28|[Liar, Liar](https://yenpress.com/titles/9798855403251-liar-liar-vol-4-manga "Yen Press")|4|Yen Press|🖥️📖|
 |Jul 28|[Li'l Miss Vampire Can't Suck Right](https://yenpress.com/titles/9798855409703-li-l-miss-vampire-can-t-suck-right-vol-3 "Yen Press")|3|Yen Press|🖥️📖|
 |Jul 28|[Liste Rouge](https://yenpress.com/titles/9798855430660-liste-rouge-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
@@ -324,6 +324,9 @@ description: "Digital and ebook releases for licensed English manga, manhwa, man
 |Sep 22|[Yuri Yuri Panic: A Case of Extreme Cuteness Has Occurred!](https://sevenseasentertainment.com/books/yuri-yuri-panic-a-case-of-extreme-cuteness-has-occurred-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Sep 23|[Reset](https://j-novel.club/series/resetreboot#volume-1 "J-Novel Club")|1|J-Novel Club|🖥️<span class="hidden">📖</span>|
 |Sep 29|[Are You a Landmine, Chihara-san?](https://sevenseasentertainment.com/books/are-you-a-landmine-chihara-san-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
+|Sep 29|[A Stitch in Time](https://www.penguinrandomhouse.com/books/825203/a-stitch-in-time-volume-1-by-tokyopop/9781427885968 "TOKYOPOP")|1|TOKYOPOP|🖥️📖|
+|Sep 29|[A Stitch in Time](https://www.penguinrandomhouse.com/books/825203/a-stitch-in-time-volume-1-by-adriano-barone/9781427892201 "TOKYOPOP")|1.1|TOKYOPOP|🖥️<span class="hidden">📖</span>|
+|Sep 29|[A Stitch in Time](https://www.penguinrandomhouse.com/books/825203/a-stitch-in-time-volume-1-by-adriano-barone/9781427892218 "TOKYOPOP")|1.2|TOKYOPOP|🖥️<span class="hidden">📖</span>|
 |Sep 29|[Can You Kiss Me First?](https://sevenseasentertainment.com/books/can-you-kiss-me-first-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Sep 29|[Even the Student Council Has Its Holes!](https://sevenseasentertainment.com/books/even-the-student-council-has-its-holes-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Sep 29|[Konohana Kitan](https://www.penguinrandomhouse.com/books/827213/konohana-kitan-volume-15-by-sakuya-amano/9781427887160 "TOKYOPOP")|15|TOKYOPOP|🖥️📖|
@@ -481,12 +484,12 @@ description: "Digital and ebook releases for licensed English manga, manhwa, man
 |Nov 24|[Handyman Saitou in Another World](https://yenpress.com/titles/9798855401288-handyman-saitou-in-another-world-vol-10 "Yen Press")|10|Yen Press|🖥️📖|
 |Nov 24|[He Was My Brother](https://yenpress.com/titles/9798855442915-he-was-my-brother-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
 |Nov 24|[Honey Trap Shared House](https://yenpress.com/titles/9798855438550-honey-trap-shared-house-vol-7 "Yen Press")|7|Yen Press|🖥️📖|
+|Nov 24|[Love at the City's Edge on a Moonlit Night](https://yenpress.com/titles/9798855425338-love-at-the-city-s-edge-on-a-moonlit-night-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
 |Nov 24|[I Don't Know, Yoshida](https://sevenseasentertainment.com/books/i-dont-know-yoshida-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Nov 24|[Isekai Samurai](https://yenpress.com/titles/9798855425260-isekai-samurai-vol-4 "Yen Press")|4|Yen Press|🖥️📖|
 |Nov 24|[Is the Order a Rabbit?](https://yenpress.com/titles/9798855405941-is-the-order-a-rabbit-vol-6 "Yen Press")|6|Yen Press|🖥️📖|
 |Nov 24|[Izumi and the Dragon Encyclopedia](https://yenpress.com/titles/9798855436426-izumi-and-the-dragon-encyclopedia-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
 |Nov 24|[Kakegurui - Compulsive Gambler -](https://yenpress.com/titles/9798855440201-kakegurui-compulsive-gambler-vol-20 "Yen Press")|20|Yen Press|🖥️📖|
-|Nov 24|[Love at the City's Edge on a Moonlit Night](https://yenpress.com/titles/9798855425338-love-at-the-city-s-edge-on-a-moonlit-night-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
 |Nov 24|[Laid-Back Camp](https://yenpress.com/titles/9798855440386-laid-back-camp-vol-18 "Yen Press")|18|Yen Press|🖥️📖|
 |Nov 24|[Let This Grieving Soul Retire](https://yenpress.com/titles/9798855433951-let-this-grieving-soul-retire-vol-11-manga "Yen Press")|11|Yen Press|🖥️📖|
 |Nov 24|[Liste Rouge](https://yenpress.com/titles/9798855438451-liste-rouge-vol-2 "Yen Press")|2|Yen Press|🖥️📖|
@@ -517,6 +520,9 @@ description: "Digital and ebook releases for licensed English manga, manhwa, man
 
 |Date|Series|Volume|Publisher|Type|
 |:---:|---|:---:|---|:---:|
+|Dec 01|[A Stitch in Time](https://www.penguinrandomhouse.com/books/825205/a-stitch-in-time-volume-2-by-tokyopop/9781427886682 "TOKYOPOP")|2|TOKYOPOP|🖥️📖|
+|Dec 01|[A Stitch in Time](https://www.penguinrandomhouse.com/books/825205/a-stitch-in-time-volume-2-by-adriano-barone/9781427892225 "TOKYOPOP")|2.1|TOKYOPOP|🖥️<span class="hidden">📖</span>|
+|Dec 01|[A Stitch in Time](https://www.penguinrandomhouse.com/books/825205/a-stitch-in-time-volume-2-by-adriano-barone/9781427892232 "TOKYOPOP")|2.2|TOKYOPOP|🖥️<span class="hidden">📖</span>|
 |Dec 01|[I Thought My Childhood Friend Was a Guy… Now She's My Wife and It's Going Too Well!](https://sevenseasentertainment.com/books/i-thought-my-childhood-friend-was-a-guy-now-shes-my-wife-and-its-going-too-well-manga-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Dec 01|[I Wish I Could Meet You Again on the Hill Where That Flower Blooms (Omnibus)](https://sevenseasentertainment.com/books/i-wish-i-could-meet-you-again-on-the-hill-where-that-flower-blooms-manga-omnibus/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Dec 01|[Marchen](https://sevenseasentertainment.com/books/marchen/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|

@@ -155,13 +155,13 @@ description: "Full release calendar for licensed English manga, manhwa, manhua &
 |Jul 28|[Fruit of the Underworld](https://www.penguinrandomhouse.com/books/815068/fruit-of-the-underworld-2-by-aya-kanno/9781647295899 "Kodansha")|2|Kodansha|🖥️📖|
 |Jul 28|[Futari Switch](https://yenpress.com/titles/9798855413274-futari-switch-vol-3 "Yen Press")|3|Yen Press|🖥️📖|
 |Jul 28|[Happy Kanako's Killer Life](https://sevenseasentertainment.com/books/happy-kanakos-killer-life-vol-8/ "Seven Seas Entertainment")|8|Seven Seas Entertainment|<span class="hidden">🖥️</span>📖|
+|Jul 28|[The Crow's Ballad at Dawn](https://yenpress.com/titles/9798855425314-the-crow-s-ballad-at-dawn "Yen Press")|1|Yen Press|🖥️📖|
 |Jul 28|[I Kept Pressing the 100-Million-Year Button and Came Out on Top](https://yenpress.com/titles/9798855427752-i-kept-pressing-the-100-million-year-button-and-came-out-on-top-vol-8-manga "Yen Press")|8|Yen Press|🖥️📖|
 |Jul 28|[Imitation](https://yenpress.com/titles/9798855412802-imitation-vol-9 "Yen Press")|9|Yen Press|🖥️📖|
 |Jul 28|[I'm Standing on a Million Lives](https://www.penguinrandomhouse.com/books/777943/im-standing-on-a-million-lives-19-by-story-by-naoki-yamakawa-art-by-akinari-nao/9798888774496 "Kodansha")|19|Kodansha|<span class="hidden">🖥️</span>📖|
 |Jul 28|[In Another World with My Smartphone](https://yenpress.com/titles/9798855424171-in-another-world-with-my-smartphone-vol-16-manga "Yen Press")|16|Yen Press|🖥️📖|
 |Jul 28|[JoJo's Bizarre Adventure: Part 7--Steel Ball Run](https://www.viz.com/manga-books/manga/jojo-s-bizarre-adventure-part-7-steel-ball-run-volume-8-0/product/8902/hardcover "VIZ Media")|8|VIZ Media|🖥️📖|
 |Jul 28|[Kaijin Fugeki: Kindled Spirits](https://www.penguinrandomhouse.com/books/815172/kaijin-fugeki-kindled-spirits-4-by-ohgreat/9781647295929 "Kodansha")|4|Kodansha|<span class="hidden">🖥️</span>📖|
-|Jul 28|[The Crow's Ballad at Dawn](https://yenpress.com/titles/9798855425314-the-crow-s-ballad-at-dawn "Yen Press")|1|Yen Press|🖥️📖|
 |Jul 28|[Liar, Liar](https://yenpress.com/titles/9798855403251-liar-liar-vol-4-manga "Yen Press")|4|Yen Press|🖥️📖|
 |Jul 28|[Li'l Miss Vampire Can't Suck Right](https://yenpress.com/titles/9798855409703-li-l-miss-vampire-can-t-suck-right-vol-3 "Yen Press")|3|Yen Press|🖥️📖|
 |Jul 28|[Liste Rouge](https://yenpress.com/titles/9798855430660-liste-rouge-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
@@ -319,7 +319,6 @@ description: "Full release calendar for licensed English manga, manhwa, manhua &
 |Aug 18|[Lady Devil](https://yenpress.com/titles/9798400905056-lady-devil-vol-6 "Ize Press")|6|Ize Press|🖥️📖|
 |Aug 18|[Let's Buy the Land and Cultivate It in a Different World](https://sevenseasentertainment.com/books/lets-buy-the-land-and-cultivate-it-in-a-different-world-manga-vol-10/ "Seven Seas Entertainment")|10|Seven Seas Entertainment|<span class="hidden">🖥️</span>📖|
 |Aug 18|[Magilumiere Magical Girls Inc.](https://www.viz.com/manga-books/manga/magilumiere-magical-girls-inc-volume-14-0/product/8950/paperback "VIZ Media")|14|VIZ Media|🖥️📖|
-|Aug 18|[Medalist](https://www.penguinrandomhouse.com/books/813009/medalist-13-by-tsurumaikada/9798888777343 "Kodansha")|13|Kodansha|<span class="hidden">🖥️</span>📖|
 |Aug 18|[Mission: Yozakura Family](https://www.viz.com/manga-books/manga/mission-yozakura-family-volume-24-0/product/8959/paperback "VIZ Media")|24|VIZ Media|🖥️📖|
 |Aug 18|[My Love Story with Yamada-kun at Lv999](https://www.penguinrandomhouse.com/books/797865/my-love-story-with-yamada-kun-at-lv999-volume-7-by-mashiro/9798217091898 "Inklore")|7|Inklore|🖥️📖|
 |Aug 18|[My Secretly Hot Husband](https://yenpress.com/titles/9798400905179-my-secretly-hot-husband-vol-6 "Ize Press")|6|Ize Press|🖥️📖|
@@ -366,7 +365,6 @@ description: "Full release calendar for licensed English manga, manhwa, manhua &
 |Aug 25|[Final Fantasy Lost Stranger](https://yenpress.com/titles/9798855436044-final-fantasy-lost-stranger-vol-13 "Yen Press")|13|Yen Press|🖥️📖|
 |Aug 25|[GALAXIAS](https://www.penguinrandomhouse.com/books/813118/galaxias-3-by-ao-hatesaka/9798888777138 "Kodansha")|3|Kodansha|<span class="hidden">🖥️</span>📖|
 |Aug 25|[Girls' Last Tour Collector's Edition: 1st Ration Pack](https://yenpress.com/titles/9798855426915-girls-last-tour-collector-s-edition-1st-ration-pack "Yen Press")|1|Yen Press|<span class="hidden">🖥️</span>📖|
-|Aug 25|[Go! Go! Loser Ranger!](https://www.penguinrandomhouse.com/books/808565/go-go-loser-ranger-18-by-negi-haruba/9798888776797 "Kodansha")|18|Kodansha|<span class="hidden">🖥️</span>📖|
 |Aug 25|[Golden Man](https://yenpress.com/titles/9798855435573-golden-man-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
 |Aug 25|[Hand in Hand with Mu-chan: Lessons from My Autistic Daughter](https://yenpress.com/titles/9798855426663-hand-in-hand-with-mu-chan-lessons-from-my-autistic-daughter-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
 |Aug 25|[Honkai Impact 3rd: Second Eruption](https://www.penguinrandomhouse.com/books/820636/honkai-impact-3rd-second-eruption-volume-2-by-mihoyo-comics/9781427885944 "TOKYOPOP")|2|TOKYOPOP|🖥️📖|
@@ -467,6 +465,7 @@ description: "Full release calendar for licensed English manga, manhwa, manhua &
 |Sep 08|[FAIRY TAIL: 100 Years Quest](https://www.penguinrandomhouse.com/books/824210/fairy-tail-100-years-quest-21-by-story-and-layouts-by-hiro-mashima-art-by-atsuo-ueda/9798888778616 "Kodansha")|21|Kodansha|<span class="hidden">🖥️</span>📖|
 |Sep 08|[Fly Me to the Moon](https://www.viz.com/manga-books/manga/fly-me-to-the-moon-volume-33-0/product/8995/paperback "VIZ Media")|33|VIZ Media|🖥️📖|
 |Sep 08|[Gilded Seven](https://sevenseasentertainment.com/books/gilded-seven-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
+|Sep 08|[Go! Go! Loser Ranger!](https://www.penguinrandomhouse.com/books/808565/go-go-loser-ranger-18-by-negi-haruba/9798888776797 "Kodansha")|18|Kodansha|<span class="hidden">🖥️</span>📖|
 |Sep 08|[Hayate the Combat Butler](https://www.viz.com/manga-books/manga/hayate-the-combat-butler-volume-49-0/product/8975/paperback "VIZ Media")|49|VIZ Media|🖥️📖|
 |Sep 08|[I'll Never Be Your Crown Princess! – Betrothed](https://sevenseasentertainment.com/books/ill-never-be-your-crown-princess-betrothed-manga-vol-4/ "Seven Seas Entertainment")|4|Seven Seas Entertainment|<span class="hidden">🖥️</span>📖|
 |Sep 08|[I'm Running for Crown Princess, but All I Want is a Steady Paycheck!](https://sevenseasentertainment.com/books/im-running-for-crown-princess-but-all-i-want-is-a-steady-paycheck-manga-vol-4/ "Seven Seas Entertainment")|4|Seven Seas Entertainment|<span class="hidden">🖥️</span>📖|
@@ -476,6 +475,7 @@ description: "Full release calendar for licensed English manga, manhwa, manhua &
 |Sep 08|[Makina-san's a Love Bot?!](https://sevenseasentertainment.com/books/makina-sans-a-love-bot-vol-4/ "Seven Seas Entertainment")|4|Seven Seas Entertainment|<span class="hidden">🖥️</span>📖|
 |Sep 08|[Spider-Man: Kizuna](https://www.viz.com/manga-books/manga/spider-man-kizuna-volume-4-0/product/9001/paperback "VIZ Media")|4|VIZ Media|🖥️📖|
 |Sep 08|[Medaka Kuroiwa Is Impervious to My Charms](https://www.penguinrandomhouse.com/books/834135/medaka-kuroiwa-is-impervious-to-my-charms-16-by-ran-kuze/9781647296445 "Kodansha")|16|Kodansha|<span class="hidden">🖥️</span>📖|
+|Sep 08|[Medalist](https://www.penguinrandomhouse.com/books/813009/medalist-13-by-tsurumaikada/9798888777343 "Kodansha")|13|Kodansha|<span class="hidden">🖥️</span>📖|
 |Sep 08|[Minecraft: The Manga](https://www.viz.com/manga-books/manga/minecraft-the-manga-volume-7-0/product/8979/paperback "VIZ Media")|7|VIZ Media|<span class="hidden">🖥️</span>📖|
 |Sep 08|[Re:Monster](https://sevenseasentertainment.com/books/remonster-vol-13/ "Seven Seas Entertainment")|13|Seven Seas Entertainment|<span class="hidden">🖥️</span>📖|
 |Sep 08|[Say Hello to Mr. Wallaby!](https://www.penguinrandomhouse.com/books/830963/say-hello-to-mr-wallaby-1-by-marume-goshika/9798888779521 "Kodansha")|1|Kodansha|<span class="hidden">🖥️</span>📖|
@@ -602,7 +602,9 @@ description: "Full release calendar for licensed English manga, manhwa, manhua &
 |Sep 22|[Yuri Yuri Panic: A Case of Extreme Cuteness Has Occurred!](https://sevenseasentertainment.com/books/yuri-yuri-panic-a-case-of-extreme-cuteness-has-occurred-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Sep 23|[Reset](https://j-novel.club/series/resetreboot#volume-1 "J-Novel Club")|1|J-Novel Club|🖥️<span class="hidden">📖</span>|
 |Sep 29|[Are You a Landmine, Chihara-san?](https://sevenseasentertainment.com/books/are-you-a-landmine-chihara-san-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
-|Sep 29|[A Stitch in Time](https://www.penguinrandomhouse.com/books/825203/a-stitch-in-time-volume-1-by-tokyopop/9781427885968 "TOKYOPOP")|1|TOKYOPOP|<span class="hidden">🖥️</span>📖|
+|Sep 29|[A Stitch in Time](https://www.penguinrandomhouse.com/books/825203/a-stitch-in-time-volume-1-by-tokyopop/9781427885968 "TOKYOPOP")|1|TOKYOPOP|🖥️📖|
+|Sep 29|[A Stitch in Time](https://www.penguinrandomhouse.com/books/825203/a-stitch-in-time-volume-1-by-adriano-barone/9781427892201 "TOKYOPOP")|1.1|TOKYOPOP|🖥️<span class="hidden">📖</span>|
+|Sep 29|[A Stitch in Time](https://www.penguinrandomhouse.com/books/825203/a-stitch-in-time-volume-1-by-adriano-barone/9781427892218 "TOKYOPOP")|1.2|TOKYOPOP|🖥️<span class="hidden">📖</span>|
 |Sep 29|[Can You Kiss Me First?](https://sevenseasentertainment.com/books/can-you-kiss-me-first-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Sep 29|[Daybreak](https://www.penguinrandomhouse.com/books/816101/daybreak-vol-3-by-moosopp/9781834110325 "WEBTOON Unscrolled")|3|WEBTOON Unscrolled|<span class="hidden">🖥️</span>📖|
 |Sep 29|[Dragon Head](https://www.penguinrandomhouse.com/books/834162/dragon-head-3-by-minetaro-mochizuki/9781647295127 "Kodansha")|3|Kodansha|<span class="hidden">🖥️</span>📖|
@@ -975,12 +977,12 @@ description: "Full release calendar for licensed English manga, manhwa, manhua &
 |Nov 24|[He Was My Brother](https://yenpress.com/titles/9798855442915-he-was-my-brother-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
 |Nov 24|[Hokkaido Gals Are Super Adorable! (Omnibus)](https://sevenseasentertainment.com/books/hokkaido-gals-are-super-adorable-omnibus-vol-7-8/ "Seven Seas Entertainment")|7-8|Seven Seas Entertainment|<span class="hidden">🖥️</span>📖|
 |Nov 24|[Honey Trap Shared House](https://yenpress.com/titles/9798855438550-honey-trap-shared-house-vol-7 "Yen Press")|7|Yen Press|🖥️📖|
+|Nov 24|[Love at the City's Edge on a Moonlit Night](https://yenpress.com/titles/9798855425338-love-at-the-city-s-edge-on-a-moonlit-night-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
 |Nov 24|[I Don't Know, Yoshida](https://sevenseasentertainment.com/books/i-dont-know-yoshida-vol-1/ "Seven Seas Entertainment")|1|Seven Seas Entertainment|🖥️📖|
 |Nov 24|[Isekai Samurai](https://yenpress.com/titles/9798855425260-isekai-samurai-vol-4 "Yen Press")|4|Yen Press|🖥️📖|
 |Nov 24|[Is the Order a Rabbit?](https://yenpress.com/titles/9798855405941-is-the-order-a-rabbit-vol-6 "Yen Press")|6|Yen Press|🖥️📖|
 |Nov 24|[Izumi and the Dragon Encyclopedia](https://yenpress.com/titles/9798855436426-izumi-and-the-dragon-encyclopedia-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
 |Nov 24|[Kakegurui - Compulsive Gambler -](https://yenpress.com/titles/9798855440201-kakegurui-compulsive-gambler-vol-20 "Yen Press")|20|Yen Press|🖥️📖|
-|Nov 24|[Love at the City's Edge on a Moonlit Night](https://yenpress.com/titles/9798855425338-love-at-the-city-s-edge-on-a-moonlit-night-vol-1 "Yen Press")|1|Yen Press|🖥️📖|
 |Nov 24|[Laid-Back Camp](https://yenpress.com/titles/9798855440386-laid-back-camp-vol-18 "Yen Press")|18|Yen Press|🖥️📖|
 |Nov 24|[Let This Grieving Soul Retire](https://yenpress.com/titles/9798855433951-let-this-grieving-soul-retire-vol-11-manga "Yen Press")|11|Yen Press|🖥️📖|
 |Nov 24|[Liste Rouge](https://yenpress.com/titles/9798855438451-liste-rouge-vol-2 "Yen Press")|2|Yen Press|🖥️📖|
@@ -1024,7 +1026,9 @@ description: "Full release calendar for licensed English manga, manhwa, manhua &
 
 |Date|Series|Volume|Publisher|Type|
 |:---:|---|:---:|---|:---:|
-|Dec 01|[A Stitch in Time](https://www.penguinrandomhouse.com/books/825205/a-stitch-in-time-volume-2-by-tokyopop/9781427886682 "TOKYOPOP")|2|TOKYOPOP|<span class="hidden">🖥️</span>📖|
+|Dec 01|[A Stitch in Time](https://www.penguinrandomhouse.com/books/825205/a-stitch-in-time-volume-2-by-tokyopop/9781427886682 "TOKYOPOP")|2|TOKYOPOP|🖥️📖|
+|Dec 01|[A Stitch in Time](https://www.penguinrandomhouse.com/books/825205/a-stitch-in-time-volume-2-by-adriano-barone/9781427892225 "TOKYOPOP")|2.1|TOKYOPOP|🖥️<span class="hidden">📖</span>|
+|Dec 01|[A Stitch in Time](https://www.penguinrandomhouse.com/books/825205/a-stitch-in-time-volume-2-by-adriano-barone/9781427892232 "TOKYOPOP")|2.2|TOKYOPOP|🖥️<span class="hidden">📖</span>|
 |Dec 01|[Attack on Titan Definitive Hardcover Collection](https://www.penguinrandomhouse.com/books/817255/attack-on-titan-definitive-hardcover-collection-1-vol-1-3-by-hajime-isayama/9798888777930 "Kodansha")|1|Kodansha|<span class="hidden">🖥️</span>📖|
 |Dec 01|[Backstabbed in a Backwater Dungeon: My Party Tried to Kill Me, But Thanks to an Infinite Gacha I Got LVL 9999 Friends and Am Out For Revenge](https://sevenseasentertainment.com/books/backstabbed-in-a-backwater-dungeon-my-party-tried-to-kill-me-but-thanks-to-an-infinite-gacha-i-got-lvl-9999-friends-and-am-out-for-revenge-manga-vol-13/ "Seven Seas Entertainment")|13|Seven Seas Entertainment|<span class="hidden">🖥️</span>📖|
 |Dec 01|[Black Jack Deluxe](https://www.penguinrandomhouse.com/books/834124/black-jack-deluxe-2-by-osamu-tezuka/9781647296162 "Kodansha")|2|Kodansha|<span class="hidden">🖥️</span>📖|
@@ -1112,7 +1116,7 @@ description: "Full release calendar for licensed English manga, manhwa, manhua &
 |Dec 15|[Dear Sister, I've Become a Blessed Maiden](https://sevenseasentertainment.com/books/dear-sister-ive-become-a-blessed-maiden-vol-3/ "Seven Seas Entertainment")|3|Seven Seas Entertainment|<span class="hidden">🖥️</span>📖|
 |Dec 15|[Deep-Sea Aquarium Magmell](https://yenpress.com/titles/9798855421583-deep-sea-aquarium-magmell-vol-2 "Yen Press")|2|Yen Press|🖥️📖|
 |Dec 15|[Divine Incursions](https://yenpress.com/titles/9798855427837-divine-incursions-vol-3-manga "Yen Press")|3|Yen Press|🖥️📖|
-|Dec 15|[Egnaro the Star Eating Killer](https://www.penguinrandomhouse.com/books/840687/egnaro-the-star-eating-killer-vol1-by-written-by-arata-yamaji/9781787749160 "Titan Comics")|1|Titan Comics|<span class="hidden">🖥️</span>📖|
+|Dec 15|[Egnaro the Star Eater Killer](https://www.penguinrandomhouse.com/books/840687/egnaro-the-star-eater-killer-vol1-by-written-by-arata-yamaji/9781787749160 "Titan Comics")|1|Titan Comics|<span class="hidden">🖥️</span>📖|
 |Dec 15|[Futari Switch](https://yenpress.com/titles/9798855413298-futari-switch-vol-4 "Yen Press")|4|Yen Press|🖥️📖|
 |Dec 15|[Gabriel Dropout](https://yenpress.com/titles/9798855438376-gabriel-dropout-vol-16 "Yen Press")|16|Yen Press|🖥️📖|
 |Dec 15|[Grand Metal Organs](https://sevenseasentertainment.com/books/grand-metal-organs-vol-4/ "Seven Seas Entertainment")|4|Seven Seas Entertainment|<span class="hidden">🖥️</span>📖|
